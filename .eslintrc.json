@@ -13,11 +13,10 @@
   "extends": [
     "airbnb",
     "airbnb-typescript",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "plugins": ["@typescript-eslint", "react", "react-native", "simple-import-sort", "jest"],
-  "ignorePatterns": ["metro.config.js", "metro.storybook.js", "!.storybook", ".storybook/storybook.requires.js"],
+  "ignorePatterns": ["metro.config.js" ],
   "rules": {
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "res"] }],
     "react-native/no-unused-styles": 2,
@@ -84,12 +83,6 @@
     "import/order": "off"
   },
   "overrides": [
-    {
-      "files": [".storybook/**/*.stories.tsx"],
-      "rules": {
-        "react/jsx-props-no-spreading": "off"
-      }
-    },
     {
       "files": ["src/constants/requestUrls.ts"],
       "rules": {
