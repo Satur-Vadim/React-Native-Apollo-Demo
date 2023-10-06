@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import BootSplash from '../screens/Home/Home';
+import Home from '../screens/Home/Home';
 
 import type { TRootStackParamList } from './types/TRootStackParamList';
 
@@ -12,7 +12,7 @@ function MainStackNavigator() {
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Home"
-        component={BootSplash}
+        component={Home}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

@@ -6,9 +6,7 @@ import AppNavigator from './navigation/AppNavigator';
 function App() {
   return (
     <Suspense fallback={<View />}>
-      <StatusBar
-        backgroundColor="black"
-      />
+      <StatusBar backgroundColor="black" />
       <AppNavigator />
     </Suspense>
   );
